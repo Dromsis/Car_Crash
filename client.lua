@@ -4,7 +4,6 @@ local initialHealth = -1
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(10)
-        --print("11111")
         local vehicle = GetVehiclePedIsIn(PlayerPedId(),false)
         local engineHealth = GetVehicleEngineHealth(vehicle)
         if initialHealth == -1 then
